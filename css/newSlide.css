@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1240px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: red;
+}
+.images{
+    width: 1240px;
+    height: 550px;
+    background: black;
+    align-items: center;
+    position: absolute;
+    overflow-x: hidden;
+}
+.images .image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(100%);
+}
+.images .image img{
+    width: 100%;
+    height: 100%;
+}
+.images .active{
+    transform: translateX(0);
+}
+.images .last{
+    transform: translateX(-100%);
+}
+.image .text{
+    background: rgba(255, 255, 255, .75);
+    color: black;
+    position: absolute;
+    width: 246px;
+    height: 89px;
+    bottom: 5px;
+    left: 38%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    
+}
+.image .text:hover{
+    background: rgba(255, 255, 255, .95);
+    color: black;
+    cursor: pointer;
+}
+.text h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.prev{
+   position: absolute;
+   color: black;
+   background: white;
+   top: 300px;
+   left: 30px; 
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   font-size: 30px;
+   text-align: center;
+}
+.prev:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.next{
+    position: absolute;
+    color: black;
+    background: white;
+    top: 300px;
+    right: 30px; 
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+.next:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.smooth{
+    transition: .75s ease;
+}
+.design{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* span{
+ width: 50px;
+ height: 18px;
+ background: white;
+ margin-right: 20px;
+ border-radius: 5px;
+} */
